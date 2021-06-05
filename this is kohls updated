@@ -1,0 +1,381 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Open = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local GearsCmds = Instance.new("Folder")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Cmds = Instance.new("TextButton")
+local NinjaClothes = Instance.new("TextButton")
+local RayGuns = Instance.new("TextButton")
+local Vampire = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local Music = Instance.new("Folder")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local Song4 = Instance.new("TextButton")
+local Song3 = Instance.new("TextButton")
+local Song2 = Instance.new("TextButton")
+local Song1 = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Open.Position = UDim2.new(0.909776449, 0, 0.684725046, 0)
+Open.Size = UDim2.new(0, 116, 0, 27)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open"
+Open.TextColor3 = Color3.fromRGB(255, 255, 255)
+Open.TextScaled = true
+Open.TextSize = 14.000
+Open.TextWrapped = true
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.600000024, 0, 0.232999995, 0)
+Frame.Size = UDim2.new(0, 362, 0, 188)
+Frame.Visible = false
+
+GearsCmds.Name = "Gears/Cmds"
+GearsCmds.Parent = Frame
+
+ScrollingFrame.Parent = GearsCmds
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+ScrollingFrame.Position = UDim2.new(-0.00439453125, 0, 0.138297871, 0)
+ScrollingFrame.Size = UDim2.new(0, 361, 0, 161)
+ScrollingFrame.ScrollBarThickness = 5
+
+Cmds.Name = "Cmds"
+Cmds.Parent = ScrollingFrame
+Cmds.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Cmds.Position = UDim2.new(0.572007358, 0, 0.273379207, 0)
+Cmds.Size = UDim2.new(0, 113, 0, 50)
+Cmds.Font = Enum.Font.SourceSans
+Cmds.Text = "Cmds"
+Cmds.TextColor3 = Color3.fromRGB(255, 255, 255)
+Cmds.TextScaled = true
+Cmds.TextSize = 14.000
+Cmds.TextWrapped = true
+
+NinjaClothes.Name = "NinjaClothes"
+NinjaClothes.Parent = ScrollingFrame
+NinjaClothes.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+NinjaClothes.Position = UDim2.new(0.105156548, 0, 0.273379207, 0)
+NinjaClothes.Size = UDim2.new(0, 113, 0, 50)
+NinjaClothes.Font = Enum.Font.SourceSans
+NinjaClothes.Text = "Ninja Clothes"
+NinjaClothes.TextColor3 = Color3.fromRGB(255, 255, 255)
+NinjaClothes.TextScaled = true
+NinjaClothes.TextSize = 14.000
+NinjaClothes.TextWrapped = true
+
+RayGuns.Name = "RayGuns"
+RayGuns.Parent = ScrollingFrame
+RayGuns.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+RayGuns.Position = UDim2.new(0.572007358, 0, 0.036881648, 0)
+RayGuns.Size = UDim2.new(0, 113, 0, 50)
+RayGuns.Font = Enum.Font.SourceSans
+RayGuns.Text = "Ray Guns"
+RayGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+RayGuns.TextScaled = true
+RayGuns.TextSize = 14.000
+RayGuns.TextWrapped = true
+
+Vampire.Name = "Vampire"
+Vampire.Parent = ScrollingFrame
+Vampire.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Vampire.Position = UDim2.new(0.105156541, 0, 0.036881648, 0)
+Vampire.Size = UDim2.new(0, 113, 0, 50)
+Vampire.Font = Enum.Font.SourceSans
+Vampire.Text = "Vampire Vanquisher"
+Vampire.TextColor3 = Color3.fromRGB(255, 255, 255)
+Vampire.TextScaled = true
+Vampire.TextSize = 14.000
+Vampire.TextWrapped = true
+
+TextLabel.Parent = GearsCmds
+TextLabel.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel.Position = UDim2.new(-0.00439453125, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 362, 0, 26)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "AdminSploit Gears"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Close.Name = "Close"
+Close.Parent = TextLabel
+Close.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.922246158, 0, -0.00651098043, 0)
+Close.Size = UDim2.new(0, 27, 0, 27)
+Close.Font = Enum.Font.SourceSans
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+Music.Name = "Music"
+Music.Parent = Frame
+
+ScrollingFrame_2.Parent = Music
+ScrollingFrame_2.Active = true
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+ScrollingFrame_2.Position = UDim2.new(-0.00439453125, 0, 0.138297871, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 361, 0, 161)
+ScrollingFrame_2.Visible = false
+ScrollingFrame_2.ScrollBarThickness = 5
+
+Song4.Name = "Song4"
+Song4.Parent = ScrollingFrame_2
+Song4.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song4.Position = UDim2.new(0.572007358, 0, 0.273379207, 0)
+Song4.Size = UDim2.new(0, 113, 0, 50)
+Song4.Font = Enum.Font.SourceSans
+Song4.Text = "Albert Scream"
+Song4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song4.TextScaled = true
+Song4.TextSize = 14.000
+Song4.TextWrapped = true
+
+Song3.Name = "Song3"
+Song3.Parent = ScrollingFrame_2
+Song3.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song3.Position = UDim2.new(0.105156548, 0, 0.273379207, 0)
+Song3.Size = UDim2.new(0, 113, 0, 50)
+Song3.Font = Enum.Font.SourceSans
+Song3.Text = "Korean Rage"
+Song3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song3.TextScaled = true
+Song3.TextSize = 14.000
+Song3.TextWrapped = true
+
+Song2.Name = "Song2"
+Song2.Parent = ScrollingFrame_2
+Song2.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song2.Position = UDim2.new(0.572007358, 0, 0.036881648, 0)
+Song2.Size = UDim2.new(0, 113, 0, 50)
+Song2.Font = Enum.Font.SourceSans
+Song2.Text = "Terraria - Day"
+Song2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song2.TextScaled = true
+Song2.TextSize = 14.000
+Song2.TextWrapped = true
+
+Song1.Name = "Song1"
+Song1.Parent = ScrollingFrame_2
+Song1.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Song1.Position = UDim2.new(0.105156541, 0, 0.036881648, 0)
+Song1.Size = UDim2.new(0, 113, 0, 50)
+Song1.Font = Enum.Font.SourceSans
+Song1.Text = "Sunshine"
+Song1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Song1.TextScaled = true
+Song1.TextSize = 14.000
+Song1.TextWrapped = true
+
+TextLabel_2.Parent = Music
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextLabel_2.Position = UDim2.new(-0.00439453125, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 362, 0, 26)
+TextLabel_2.Visible = false
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "AdminSploit Music"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+Close_2.Name = "Close"
+Close_2.Parent = TextLabel_2
+Close_2.BackgroundColor3 = Color3.fromRGB(76, 76, 76)
+Close_2.BackgroundTransparency = 1.000
+Close_2.Position = UDim2.new(0.922246158, 0, -0.00651098043, 0)
+Close_2.Size = UDim2.new(0, 27, 0, 27)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.TextScaled = true
+Close_2.TextSize = 14.000
+Close_2.TextWrapped = true
+
+-- Scripts:
+
+local function WLUTG_fake_script() -- Open.OpenScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Visible = false
+	end)
+end
+coroutine.wrap(WLUTG_fake_script)()
+local function NOECML_fake_script() -- Cmds.LocalScript 
+	local script = Instance.new('LocalScript', Cmds)
+
+	function Click(mouse)
+	
+		print("ACmds" )
+		print("MGui" )
+		print("GGui" )
+		print("AntiObby" )		
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(NOECML_fake_script)()
+local function ETMCNWC_fake_script() -- NinjaClothes.LocalScript 
+	local script = Instance.new('LocalScript', NinjaClothes)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("pants me 0000000000000000004942071337")) 
+		game:GetService'Players':Chat(("shirt me 0000000000000000004941942485"))
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(ETMCNWC_fake_script)()
+local function KZFXPOK_fake_script() -- RayGuns.LocalScript 
+	local script = Instance.new('LocalScript', RayGuns)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("gear me 000000000000000000130113146")) 
+		game:GetService'Players':Chat(("gear me 000000000000000000212296936"))
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(KZFXPOK_fake_script)()
+local function VSMOYD_fake_script() -- Vampire.LocalScript 
+	local script = Instance.new('LocalScript', Vampire)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("gear me 00000000000000000094794847")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(VSMOYD_fake_script)()
+local function NJFKAB_fake_script() -- Close.CloseScript 
+	local script = Instance.new('LocalScript', Close)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		script.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(NJFKAB_fake_script)()
+local function CSAUWA_fake_script() -- Song4.LocalScript 
+	local script = Instance.new('LocalScript', Song4)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 0000000000000000004895163759"))	
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(CSAUWA_fake_script)()
+local function ABABTD_fake_script() -- Song3.LocalScript 
+	local script = Instance.new('LocalScript', Song3)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000445095775")) 
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(ABABTD_fake_script)()
+local function PUPF_fake_script() -- Song2.LocalScript 
+	local script = Instance.new('LocalScript', Song2)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000153676740")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(PUPF_fake_script)()
+local function YDLEV_fake_script() -- Song1.LocalScript 
+	local script = Instance.new('LocalScript', Song1)
+
+	function Click(mouse)
+	
+		game:GetService'Players':Chat(("music 000000000000000000555604342")) 
+	
+	end
+	
+	
+	script.Parent.MouseButton1Down:Connect(Click)
+end
+coroutine.wrap(YDLEV_fake_script)()
+local function TOANVL_fake_script() -- Close_2.CloseScript 
+	local script = Instance.new('LocalScript', Close_2)
+
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.Open.Visible = true
+		script.Parent.Parent.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(TOANVL_fake_script)()
+local function XTQQMU_fake_script() -- ScreenGui.DraggableScript 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	frame = script.Parent.Frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(XTQQMU_fake_script)()
+local function HVKAPEI_fake_script() -- ScreenGui.ChatTriggerGuis 
+	local script = Instance.new('LocalScript', ScreenGui)
+
+	game.Players.LocalPlayer.Chatted:Connect(function(msg)
+		if string.sub(msg:lower(), 0, 20) == "mgui" then
+			script.parent.Frame.Music.ScrollingFrame.Visible = true
+			script.parent.Frame["Gears/Cmds"].ScrollingFrame.Visible = false
+			script.parent.Frame.Music.TextLabel.Visible = true
+			script.parent.Frame["Gears/Cmds"].TextLabel.Visible = false
+		end
+		if string.sub(msg:lower(), 0, 20) == "ggui" then
+			script.parent.Frame.Music.ScrollingFrame.Visible = false
+			script.parent.Frame["Gears/Cmds"].ScrollingFrame.Visible = true
+			script.parent.Frame.Music.TextLabel.Visible = false
+			script.parent.Frame["Gears/Cmds"].TextLabel.Visible = true
+		end
+	end)
+end
+coroutine.wrap(HVKAPEI_fake_script)()
